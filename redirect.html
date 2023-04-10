@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href='style.css' rel='stylesheet'>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <meta http-equiv="refresh" content="10; url=/cart.html">
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body style="background-color:darksalmon;">
+        <h1 style="text-align: center; font-size: 27px;">JEstore</h1>
+        <div class="redirect">
+        <i class="fa fa-envelope-o" style="color: green; font-size: 70px;"></i>
+        <h4>YOUR INFO HAS BEEN RECEIVED SUCCESFULLY</h4>
+        <small>You will be redirected to the payment page, in 10sec</small>
+        </div>
+        <script>
+            let counter = document.querySelector('h1')
+            let count = 1;
+        
+            setInterval(()=>{
+                counter.innerText = count;
+                count++
+
+                if(count > 10) location.replace('accno.html')
+            },1000)
+        </script>
+    </body>
+</html>
